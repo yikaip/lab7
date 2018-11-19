@@ -2,9 +2,6 @@
 //Yikai Peng
 //11.14.18
 
-
-
-#include "winTimer.cpp"
 #include <vector>
 using std::vector;
 #include <iostream>
@@ -13,6 +10,7 @@ using std::ostream;
 #include<algorithm>
 using std::is_sorted;
 #include "Lab7-ypeng.h"
+#include "winTimer.cpp"
 
 	void swapVal(double x, double y)
 	{
@@ -46,16 +44,6 @@ using std::is_sorted;
 				Pos--;
 			}
 			vec2.at(Pos) = Val1;
-		}
-	}
-	
-	void printSort(int vector)
-	{
-		std::vector<int> vect;
-		int n = vect.size();
-		for (int i = 0; i < n; i++)
-		{
-			cout << vect[i];
 		}
 	}
 
@@ -137,9 +125,16 @@ using std::is_sorted;
 int main()
 {
 	vector<double> vect = { 10,38,9,59 };
+	bubbleSort(vect);
 	insertionSort(vect);
+	mergeSort(vect);
+	selectionSort(vect);
+	quickSort(vect);
+	
 	for (int i = 0; i < vect.size(); i++)
 	{
 		cout << vect[i];
 	}
+	
+	return 0;
 }
