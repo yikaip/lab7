@@ -2,8 +2,8 @@
 //Yikai Peng
 //11.14.18
 
-#ifndef SortAlg
-#define SortAlg
+#ifndef SortAlg_H
+#define SortAlg_H
 
 #include <vector>
 using std::vector;
@@ -14,6 +14,8 @@ using namespace std;
 
 class SortAlg
 {
+private:
+	vector<double> vect;
 public:
 	void bubbleSort(vector<double>& vec1);
 	void insertionSort(vector<double> &vec2);
