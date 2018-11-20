@@ -124,12 +124,13 @@ using std::is_sorted;
 
 int main()
 {
+	SortAlg vec;
 	vector<double> vect = { 10,38,9,59 };
-	bubbleSort(vect);
-	insertionSort(vect);
-	mergeSort(vect);
-	selectionSort(vect);
-	quickSort(vect);
+	vec.bubbleSort;
+	vec.insertionSort;
+	vec.selectionSort;
+	vec.mergeSort;
+	vec.quickSort;
 	
 	for (int i = 0; i < vect.size(); i++)
 	{
